@@ -6,18 +6,18 @@ app.use(bodyParser.json())
 app.use(cors())
 let product = [
     {
-        id: 1,
-        name:"Apple",
-        price:"500"
+        "id": "1",
+        "name":"Apple",
+        "price":"500"
     },    {
-        id: 2,
-        name:"Samsung",
-        price:"800"
+        "id": "2",
+        "name":"Samsung",
+        "price":"800"
     },
     {
-        id: 3,
-        name:"Xiomi",
-        price:"540000"
+        "id": "3",
+        "name":"Xiomi",
+        "price":"540000"
     }
 ]
 
