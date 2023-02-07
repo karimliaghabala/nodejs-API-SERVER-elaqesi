@@ -20,7 +20,7 @@ function App() {
     console.log(forumData)
     fetch("http://localhost:8080/products",{
       method:'POST',
-      headers:{'Content-Type':'appilication/json'},
+      headers:{'Content-Type':'application/json'},
       body: JSON.stringify(forumData)
     })
   }
