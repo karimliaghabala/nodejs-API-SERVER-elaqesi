@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors")
 const app = express();
 const bodyParser = require("body-parser")
+const PORT = process.env.PORT || 8080
 app.use(bodyParser.json())
 app.use(cors())
 let product = [
@@ -51,7 +52,6 @@ app.delete("/product/:id",(req,res)=>{
     product = product.filter(item=>item.id != req.params.id)
     res.send(product)
 })
-
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("Server Loading...")
 })

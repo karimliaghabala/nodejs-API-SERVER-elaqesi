@@ -9,7 +9,7 @@ function App() {
   })
 
   useEffect(() => {
-    fetch("http://localhost:3000/")
+    fetch("http://localhost:8080/")
       .then(res => res.json()
         .then(apiData => setData(apiData))
       )
@@ -18,7 +18,7 @@ function App() {
   const getDataBasa = (e)=>{
     e.preventDefault()
     console.log(forumData)
-    fetch("http://localhost:3000/products",{
+    fetch("http://localhost:8080/products",{
       method:'POST',
       headers:{'Content-Type':'appilication/json'},
       body: JSON.stringify(forumData)
